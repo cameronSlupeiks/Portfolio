@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: rgb(247, 247, 247);
+  font-size: 16px;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+	background: transparent;
+}
+
+$link-color: rgb(29, 29, 29);
+
+/*-----------------------------SOCIAL-----------------------------*/
+
+.social ul {
+  list-style-type: none;
+  padding: 4rem 0 0 0;
+}
+
+.social li {
+  display: inline-block;
+  padding: 0 0.75rem 0 0.75rem;
+}
+
+.social svg {
+	width: calc(2rem + 2vmin);
+	height: calc(2rem + 2vmin);
+  fill: rgb(29, 29, 29);
+}
+
+.social svg:hover {
+	fill: $link-color;
+}
+
+/*----------------------------------------------------------------*/
+
+/*--------------------------LANDING PAGE--------------------------*/
+
+.landing {
+	color: rgb(29, 29, 29);
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.landing h1 {
+	font-size: calc(60px + (200 - 60) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: 600;
+  padding: 16rem 1rem 12rem 1rem
+}
+
+.landing h1 > span {
+	font-weight: 300;
+}
+
+.landing h2 {
+	font-size: calc(30px + (50 - 30) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.landing h2 > a {
+  text-decoration: none;
+  color: rgb(29, 29, 29);
+  display: inline-block;
+  padding: 12px;
+  transition: all .2s ease-in-out;
+  box-sizing: border-box;
+  text-decoration: none;
+  box-shadow: inset 0 -8px 0 0 $link-color;
+  &:hover {
+    box-shadow: inset 0 -95px 0 0 $link-color;
+    color: rgb(247, 247, 247);
+  }
+}
+
+/*----------------------------------------------------------------*/
+
+/*-------------------------MEDIA QUERIES--------------------------*/
+
+@media only screen and (max-width: 400px) {
+  .landing h1 {
+    padding: 4rem 1rem 4rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .landing h1 {
+    padding: 5rem 1rem 5rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .landing h1 {
+    padding: 5.5rem 1rem 5.5rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .landing h1 {
+    padding: 6rem 1rem 6rem 1rem;
+  }
+}
+
+
+/*----------------------------------------------------------------*/
