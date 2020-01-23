@@ -32,7 +32,8 @@ export default () => (
 				<i className="fas fa-map-pin"></i> Ottawa, Canada
 			</h2>
 			<h2>
-				Developer @{' '}
+			    <i class="fas fa-laptop-code"></i>
+				{' '}Developer @{' '}
 				<a href="https://crypto4a.com/" target="blank">
 					Crypto4A
 				</a>
