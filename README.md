@@ -1,3 +1,3 @@
 # Portfolio Site 🌐
 
-https://cameronslupeiks.io
+https://camslupeiks.io
