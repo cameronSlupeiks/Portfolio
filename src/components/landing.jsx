@@ -1,5 +1,6 @@
 import React from 'react';
 import Social from './social';
+import Emoji from './emoji';
 import PDF from '../documents/resume.pdf';
 
 export default () => (
@@ -29,11 +30,12 @@ export default () => (
 		</h1>
 		<div className="info">
 			<h2>
-				<i className="fas fa-map-pin"></i> Ottawa, Canada
+				<Emoji symbol="📍" label="Round Pushpin"/>
+				Ottawa, Canada
 			</h2>
 			<h2>
-			    <i class="fas fa-laptop-code"></i>
-				{' '}Developer @{' '}
+				<Emoji symbol="👨‍💻" label="Man Technologist: Medium-Light Skin Tone"/>
+				{' '} Developer @ {' '}
 				<a href="https://crypto4a.com/" target="blank">
 					Crypto4A
 				</a>

@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400&display=swap');
 
+$blue: rgb(10, 132, 255);
+$white: rgb(247, 247, 247);
+$black: rgb(29, 29, 29);
+
 body {
 	font-family: 'Nunito', sans-serif;
-	background-color: rgb(247, 247, 247);
+	background-color: $white;
   font-size: 16px;
 }
 
@@ -10,8 +14,6 @@ body {
 	width: 0px;
 	background: transparent;
 }
-
-$link-color: rgb(18, 22, 228);
 
 /*-----------------------------SOCIAL-----------------------------*/
 
@@ -32,7 +34,7 @@ $link-color: rgb(18, 22, 228);
 }
 
 .social svg:hover {
-	fill: $link-color;
+	fill: $blue;
 }
 
 /*----------------------------------------------------------------*/
@@ -40,7 +42,7 @@ $link-color: rgb(18, 22, 228);
 /*--------------------------LANDING PAGE--------------------------*/
 
 .landing {
-	color: rgb(29, 29, 29);
+	color: $black;
   text-align: center;
   min-height: 100vh;
   display: flex;
@@ -58,21 +60,21 @@ $link-color: rgb(18, 22, 228);
 }
 
 .landing h2 {
-	font-size: calc(30px + (50 - 30) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(25px + (45 - 25) * ((100vw - 300px) / (1600 - 300)));
+  padding-top: 0.3rem;
 }
 
 .landing h2 > a {
   text-decoration: none;
-  color: rgb(29, 29, 29);
-  display: inline-block;
-  padding: 12px;
+  color: $black;
+  padding: 8px;
   transition: all .3s ease-in-out;
   box-sizing: border-box;
-  text-decoration: none;
-  box-shadow: inset 0 -8px 0 0 $link-color;
+  box-shadow: inset 0 -8px 0 0 $blue;
   &:hover {
-    box-shadow: inset 0 -95px 0 0 $link-color;
+    box-shadow: inset 0 -90px 0 0 $blue;
     color: rgb(247, 247, 247);
+    border-radius: 6px;
   }
 }
 
@@ -83,6 +85,9 @@ $link-color: rgb(18, 22, 228);
 @media only screen and (max-width: 400px) {
   .landing h1 {
     padding: 4rem 1rem 4rem 1rem;
+  }
+  #laptop-icon {
+    display: none;
   }
 }
 
@@ -103,6 +108,5 @@ $link-color: rgb(18, 22, 228);
     padding: 6rem 1rem 6rem 1rem;
   }
 }
-
 
 /*----------------------------------------------------------------*/
