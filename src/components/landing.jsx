@@ -34,7 +34,7 @@ export default () => (
 				Ottawa, Canada
 			</h2>
 			<h2>
-				<Emoji symbol="👨‍💻" label="Man Technologist: Medium-Light Skin Tone"/>
+				<Emoji symbol="👨🏼‍💻" label="Man Technologist: Medium-Light Skin Tone"/>
 				{' '} Developer @ {' '}
 				<a href="https://crypto4a.com/" target="blank">
 					Crypto4A
