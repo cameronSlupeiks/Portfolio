@@ -3,38 +3,39 @@
 $blue: rgb(10, 132, 255);
 $white: rgb(247, 247, 247);
 $black: rgb(29, 29, 29);
+$grey: rgb(44, 44, 44);
+
+html {
+	overflow: -moz-scrollbars-none !important;
+}
 
 body {
 	font-family: 'Nunito', sans-serif;
 	background-color: $white;
-  font-size: 16px;
+	font-size: 16px;
+	scrollbar-width: none !important;
 }
 
-::-webkit-scrollbar {
-	width: 0px;
-	background: transparent;
+body {
+	-ms-overflow-style: none;
 }
 
 /*-----------------------------SOCIAL-----------------------------*/
 
 .social ul {
-  list-style-type: none;
-  padding: 4rem 0 0 0;
+	list-style-type: none;
+	padding-top: 1.25rem;
 }
 
 .social li {
-  display: inline-block;
-  padding: 0 0.75rem 0 0.75rem;
+	display: inline-block;
+	padding: 0 0.5rem 0 0.5rem;
 }
 
 .social svg {
-	width: calc(2rem + 2vmin);
-	height: calc(2rem + 2vmin);
-  fill: rgb(29, 29, 29);
-}
-
-.social svg:hover {
-	fill: $blue;
+	width: calc(1rem + 1vmin);
+	height: calc(1rem + 1vmin);
+	fill: $black;
 }
 
 /*----------------------------------------------------------------*/
@@ -42,17 +43,17 @@ body {
 /*--------------------------LANDING PAGE--------------------------*/
 
 .landing {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 	color: $black;
-  text-align: center;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
 .landing h1 {
-	font-size: calc(60px + (200 - 60) * ((100vw - 300px) / (1600 - 300)));
-  font-weight: 600;
-  padding: 16rem 1rem 12rem 1rem
+	font-size: calc(60px + (220 - 60) * ((100vw - 300px) / (1600 - 300)));
+	font-weight: 600;
+	padding: 12rem 1rem 12rem 1rem;
 }
 
 .landing h1 > span {
@@ -60,22 +61,162 @@ body {
 }
 
 .landing h2 {
-  font-size: calc(25px + (45 - 25) * ((100vw - 300px) / (1600 - 300)));
-  padding-top: 0.3rem;
+	font-size: calc(25px + (45 - 25) * ((100vw - 300px) / (1600 - 300)));
+	padding-top: 0.3rem;
 }
 
 .landing h2 > a {
-  text-decoration: none;
-  color: $black;
-  padding: 8px;
-  transition: all .3s ease-in-out;
-  box-sizing: border-box;
-  box-shadow: inset 0 -8px 0 0 $blue;
-  &:hover {
-    box-shadow: inset 0 -90px 0 0 $blue;
-    color: rgb(247, 247, 247);
-    border-radius: 6px;
-  }
+	text-decoration: none;
+	padding: 8px;
+	transition: all 0.3s ease-in-out;
+	box-sizing: border-box;
+	box-shadow: inset 0 -8px 0 0 $blue;
+	color: $black;
+	&:hover {
+		box-shadow: inset 0 -90px 0 0 $blue;
+		border-radius: 4px;
+		color: $white;
+	}
+}
+
+/*----------------------------------------------------------------*/
+
+/*----------------------------ABOUT ME----------------------------*/
+
+.about-me {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: $white;
+	color: $black;
+}
+
+.about-me h3 {
+	font-size: calc(30px + (100 - 30) * ((100vw - 300px) / (1600 - 300)));
+	font-weight: 600;
+	padding: 0rem 3rem 0rem 3rem;
+	text-align: center;
+}
+
+.about-me p {
+	font-size: calc(26px + (68 - 26) * ((100vw - 300px) / (1600 - 300)));
+	font-weight: 300;
+	padding: 3rem 3rem 0rem 3rem;
+}
+
+/*----------------------------------------------------------------*/
+
+/*---------------------------EXPERIENCE---------------------------*/
+
+.experience {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: $white;
+	color: $black;
+}
+
+.experience h3 {
+	text-align: center;
+	font-size: calc(30px + (100 - 30) * ((100vw - 300px) / (1600 - 300)));
+	font-weight: 600;
+	padding: 3rem 3rem 0rem 3rem;
+}
+
+.experience .experience-carousel {
+	margin: auto;
+	min-height: 60vh;
+	width: 90%;
+	padding: 0rem;
+	margin-top: 4rem;
+	border-radius: 4px;
+	background-color: $white;
+	color: $black;
+	box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.experience .tabs {
+	background-color: $black;
+	color: $white;
+}
+
+.experience .experience-list {
+	font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (1600 - 300)));
+	font-weight: 300;
+}
+
+.experience .experience-list li {
+	padding: 0.5rem;
+}
+
+/*-----------------------------CONTACT----------------------------*/
+
+.contact {
+	min-height: 100vh;
+	background-color: $white;
+	color: $black;
+}
+
+.contact h3 {
+	text-align: center;
+	font-size: calc(30px + (100 - 30) * ((100vw - 300px) / (1600 - 300)));
+	font-weight: 600;
+	padding: 3rem 3rem 0rem 3rem;
+}
+
+.MuiButton-containedPrimary {
+	background-color: $blue !important;
+	color: $white !important;
+}
+
+/*----------------------------------------------------------------*/
+
+/*------------------------------FOOTER----------------------------*/
+
+.footer {
+	text-align: center;
+	background-color: $black;
+	color: $white;
+	line-height: 50px;
+	height: 50px;
+	text-align: center;
+}
+
+.footer-content {
+	vertical-align: middle;
+}
+
+/*----------------------------------------------------------------*/
+
+/*----------------------------NAVBAR------------------------------*/
+
+.MuiAppBar-colorPrimary {
+	background-color: $white !important;
+	color: $black !important;
+}
+
+.MuiPaper-root {
+	background-color: $white !important;
+	color: $black !important;
+}
+
+.MuiPaper-elevation4 {
+	z-index: 1000 !important;
+	box-shadow: none !important;
+}
+
+.MuiTypography-body1 {
+	font-size: calc(40px + (150 - 40) * ((100vw - 300px) / (1600 - 300))) !important;
+	font-family: 'Nunito', sans-serif !important;
+}
+
+/*----------------------------------------------------------------*/
+
+/*----------------------------SCROLL------------------------------*/
+
+.MuiFab-secondary {
+	background-color: $blue !important;
+	color: $white !important;
 }
 
 /*----------------------------------------------------------------*/
@@ -83,30 +224,60 @@ body {
 /*-------------------------MEDIA QUERIES--------------------------*/
 
 @media only screen and (max-width: 400px) {
-  .landing h1 {
-    padding: 4rem 1rem 4rem 1rem;
-  }
-  #laptop-icon {
-    display: none;
-  }
+	.landing h1 {
+		padding: 4rem 1rem 4rem 1rem;
+	}
+	#laptop-icon {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 600px) {
-  .landing h1 {
-    padding: 5rem 1rem 5rem 1rem;
-  }
+	.landing {
+		min-height: 80vh;
+	}
+	.landing h1 {
+		padding: 5rem 1rem 5rem 1rem;
+	}
+	.about-me {
+		min-height: 0;
+	}
+	.about-me h3 {
+		padding: 3rem 2rem 0rem 2rem;
+	}
+	.about-me p {
+		padding: 3rem 2rem 0rem 2rem;
+	}
+	.experience {
+		min-height: 0;
+	}
+	.experience h3 {
+		padding: 3rem 2rem 0rem 2rem;
+	}
+	.contact h3 {
+		padding: 3rem 2rem 0rem 2rem;
+	}
+	h3 {
+		text-align: center !important;
+	}
 }
 
-@media only screen and (max-width: 1200px) {
-  .landing h1 {
-    padding: 5.5rem 1rem 5.5rem 1rem;
-  }
+@media only screen and (max-width: 1250px) {
+	.landing h1 {
+		padding: 7.5rem 1rem 7.5rem 1rem !important;
+	}
 }
 
 @media only screen and (max-width: 1600px) {
-  .landing h1 {
-    padding: 6rem 1rem 6rem 1rem;
-  }
+	.landing h1 {
+		padding: 8rem 1rem 8rem 1rem;
+	}
+}
+
+@media only screen and (max-height: 800px) {
+	.landing h1 {
+		padding: 6rem 1rem 6rem 1rem;
+	}
 }
 
 /*----------------------------------------------------------------*/
