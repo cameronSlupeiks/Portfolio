@@ -30,9 +30,12 @@ export default () => {
 		<div className={classes.container}>
 			<Grid item xs={12}>
 				<Grid item xs={12}>
-					<FormGroup className={classes.formGroup} noValidate autoComplete='on'>
+					<FormGroup className={classes.formGroup} noValidate autoComplete='on' name='contact' method='post'>
+						<input type='hidden' name='form-name' value='contact' />
 						<TextField
-							className={classes.textField}
+							className='textfield'
+							type='text'
+							name='first'
 							id='outlined-basic'
 							label='First name'
 							variant='outlined'
@@ -40,14 +43,18 @@ export default () => {
 							required
 						/>
 						<TextField
-							className={classes.textField}
+							className='textfield'
+							type='text'
+							name='last'
 							id='outlined-basic'
 							label='Last Name'
 							variant='outlined'
 							color='secondary'
 						/>
 						<TextField
-							className={classes.textField}
+							className='textfield'
+							type='email'
+							name='email'
 							id='outlined-basic'
 							label='Email'
 							variant='outlined'
@@ -55,14 +62,17 @@ export default () => {
 							required
 						/>
 						<TextField
-							className={classes.textField}
+							className='textfield'
+							type='text'
+							name='subject'
 							id='outlined-basic'
 							label='Subject'
 							variant='outlined'
 							color='secondary'
 						/>
 						<TextField
-							className={classes.textField}
+							className='textfield'
+							name='message'
 							id='outlined-static'
 							label='Message'
 							multiline
@@ -71,7 +81,7 @@ export default () => {
 							color='secondary'
 							required
 						/>
-						<Button className={classes.button} variant='contained' color='primary'>
+						<Button className={classes.button} type='submit' variant='contained' color='primary'>
 							Send
 						</Button>
 					</FormGroup>

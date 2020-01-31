@@ -53,7 +53,7 @@ body {
 .landing h1 {
 	font-size: calc(60px + (220 - 60) * ((100vw - 300px) / (1600 - 300)));
 	font-weight: 600;
-	padding: 12rem 1rem 12rem 1rem;
+	padding: 10rem 1rem 10rem 1rem;
 }
 
 .landing h1 > span {
@@ -164,6 +164,11 @@ body {
 	padding: 3rem 3rem 0rem 3rem;
 }
 
+.contact .textfield {
+	margin-top: 2rem;
+	width: 40rem;
+}
+
 .MuiButton-containedPrimary {
 	background-color: $blue !important;
 	color: $white !important;
@@ -257,6 +262,9 @@ body {
 	.contact h3 {
 		padding: 3rem 2rem 0rem 2rem;
 	}
+	.contact .textfield {
+		width: 20rem;
+	}
 	h3 {
 		text-align: center !important;
 	}
@@ -270,13 +278,13 @@ body {
 
 @media only screen and (max-width: 1600px) {
 	.landing h1 {
-		padding: 8rem 1rem 8rem 1rem;
+		padding: 7rem 1rem 7rem 1rem;
 	}
 }
 
 @media only screen and (max-height: 800px) {
 	.landing h1 {
-		padding: 6rem 1rem 6rem 1rem;
+		padding: 5rem 1rem 5rem 1rem;
 	}
 }
 
