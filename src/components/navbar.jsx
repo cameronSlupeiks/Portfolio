@@ -30,6 +30,12 @@ const useStyles = makeStyles(theme => ({
 export default props => {
 	const classes = useStyles();
 
+	const sections = [
+		['01. About Me', 'about'],
+		['02. Experience', 'experience'],
+		['03. Contact', 'contact'],
+	];
+
 	const [state, setState] = React.useState({
 		left: false,
 	});
@@ -49,9 +55,9 @@ export default props => {
 			onKeyDown={toggleDrawer(side, false)}
 		>
 			<List>
-				{['01. About Me', '02. Experience', '03. Contact'].map((text, index) => (
-					<ListItem button key={text} onClick=''>
-						<ListItemText primary={text} />
+				{sections.map((text, index) => (
+					<ListItem button key={text[0]}>
+						<ListItemText primary={text[0]} />
 					</ListItem>
 				))}
 			</List>
@@ -69,9 +75,14 @@ export default props => {
 						aria-label='menu'
 						onClick={toggleDrawer('left', true)}
 					>
-						<i class='fas fa-bars'></i>
+						<i className='fas fa-bars'></i>
 					</IconButton>
-					<Drawer open={state.left} onClose={toggleDrawer('left', false)}>
+					<Drawer
+						open={state.left}
+						onClose={toggleDrawer('left', false)}
+						transitionDuration={(500, 500)}
+						anchor='left'
+					>
 						{sideList('left')}
 					</Drawer>
 					<Typography variant='h6' className={classes.title}></Typography>
