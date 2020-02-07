@@ -46,7 +46,7 @@ export default function SimpleTabs() {
 
 	return (
 		<div className='experience'>
-			<ScrollAnimation animateIn='rotateInUpLeft' animateOnce='true' delay='500'>
+			<ScrollAnimation animateIn='rotateInUpLeft' animateOnce={true}>
 				<h3>02. Experience</h3>
 				<div className='experience-carousel'>
 					<AppBar position='static'>

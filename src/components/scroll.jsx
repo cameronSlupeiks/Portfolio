@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Fab from '@material-ui/core/Fab';
@@ -32,23 +31,18 @@ function ScrollTop(props) {
 
 	return (
 		<Zoom in={trigger}>
-			<div onClick={handleClick} role="presentation" className={classes.root}>
+			<div onClick={handleClick} role='presentation' className={classes.root}>
 				{children}
 			</div>
 		</Zoom>
 	);
 }
 
-ScrollTop.propTypes = {
-	children: PropTypes.element.isRequired,
-	window: PropTypes.func,
-};
-
 export default props => (
-	<div className="scrollToTop">
+	<div className='scrollToTop'>
 		<ScrollTop {...props}>
-			<Fab color="secondary" size="small" aria-label="scroll back to top">
-				<i class="fas fa-arrow-up"></i>
+			<Fab color='secondary' size='small' aria-label='scroll back to top'>
+				<i className='fas fa-arrow-up'></i>
 			</Fab>
 		</ScrollTop>
 	</div>
