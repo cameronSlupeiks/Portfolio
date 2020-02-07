@@ -1,41 +1,42 @@
 {
-  "name": "camslupeiks.io",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@material-ui/core": "^4.9.0",
-    "antd": "^3.26.7",
-    "axios": "^0.19.2",
-    "eva-icons": "^1.1.2",
-    "express": "^4.17.1",
-    "hamburgers": "^1.1.3",
-    "material-ui-icons": "^1.0.0-beta.36",
-    "node-sass": "^4.13.1",
-    "react": "^16.12.0",
-    "react-animate-on-scroll": "^2.1.5",
-    "react-dom": "^16.12.0",
-    "react-eva-icons": "0.0.8",
-    "react-rellax": "^1.0.2",
-    "react-reveal": "^1.2.2",
-    "react-scripts": "2.1.5",
-    "react-swipeable-views": "^0.13.5-rc",
-    "react-typed": "^1.1.0",
-    "reactstrap": "^8.4.0",
-    "spotify-web-api-node": "^4.0.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+	"name": "camslupeiks.io",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@material-ui/core": "^4.9.0",
+		"antd": "^3.26.7",
+		"axios": "^0.19.2",
+		"eva-icons": "^1.1.2",
+		"express": "^4.17.1",
+		"hamburgers": "^1.1.3",
+		"material-ui-icons": "^1.0.0-beta.36",
+		"node-sass": "^4.13.1",
+		"react": "^16.12.0",
+		"react-animate-on-scroll": "^2.1.5",
+		"react-dom": "^16.12.0",
+		"react-eva-icons": "0.0.8",
+		"react-rellax": "^1.0.2",
+		"react-reveal": "^1.2.2",
+		"react-scripts": "2.1.5",
+		"react-scroll": "^1.7.16",
+		"react-swipeable-views": "^0.13.5-rc",
+		"react-typed": "^1.1.0",
+		"reactstrap": "^8.4.0",
+		"spotify-web-api-node": "^4.0.0"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": [
+		">0.2%",
+		"not dead",
+		"not ie <= 11",
+		"not op_mini all"
+	]
 }
