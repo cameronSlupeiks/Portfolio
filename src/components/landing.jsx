@@ -4,7 +4,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 export default () => (
 	<div className='landing'>
-		<ScrollAnimation animateIn='tada' animateOnce={true}>
+		<ScrollAnimation animateIn='swing' animateOnce={true}>
 			<h1 className='name'>
 				<span>Cam</span> Slupeiks
 			</h1>

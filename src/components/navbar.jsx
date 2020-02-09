@@ -31,9 +31,9 @@ export default props => {
 	const classes = useStyles();
 
 	const sections = [
-		['01. About Me', 'about'],
-		['02. Experience', 'experience'],
-		['03. Contact', 'contact'],
+		['About Me', 'about'],
+		['Experience', 'experience'],
+		['Contact', 'contact'],
 	];
 
 	const [state, setState] = React.useState({
