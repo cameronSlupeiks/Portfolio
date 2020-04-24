@@ -4,7 +4,7 @@ import Emoji from './emoji';
 export default () => (
 	<footer className='footer'>
 		<div className='footer-content'>
-			Made with <Emoji symbol='🍔' label='Hamburger' /> & <Emoji symbol='🍟' label='French Fries' />.
+			Made in Canada <Emoji symbol='🇨🇦' label='Flag: Canada' />
 		</div>
 	</footer>
 );

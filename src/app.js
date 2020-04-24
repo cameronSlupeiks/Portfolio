@@ -4,7 +4,6 @@ import NavBar from './components/navbar';
 import Landing from './components/landing';
 import About from './components/about';
 import Experience from './components/experience';
-import Contact from './components/contact';
 import ScrollToTop from './components/scroll';
 import Footer from './components/footer';
 import './styles/main.scss';
@@ -16,7 +15,6 @@ export default () => (
 		<Landing />
 		<About />
 		<Experience />
-		<Contact />
 		<ScrollToTop />
 		<Footer />
 	</div>

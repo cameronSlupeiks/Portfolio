@@ -1,13 +1,13 @@
-import React from 'react'
-import Icon from 'react-eva-icons'
+import React from 'react';
+import Icon from 'react-eva-icons';
 
-export default props => (
+export default (props) => (
 	<a href={props.href} target={props.target}>
 		<Icon
 			name={props.name}
-			size="small"
+			size='small'
 			animation={{
-				type: 'shake',
+				type: '',
 				hover: true,
 				infinite: false,
 			}}
